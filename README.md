@@ -1,115 +1,49 @@
-# 🌍 Global Development Power BI Dashboard
+# Global Development Power BI Dashboard
 
-An interactive **Power BI dashboard** analyzing global economic, population, and sustainability indicators using the **World Bank World Development Indicators (WDI)** dataset.
+An interactive Power BI report exploring economic development, population, and sustainability indicators across countries and years using World Bank World Development Indicators (WDI) data.
 
-This project explores how **economic growth, population changes, and energy transition trends** vary across countries and over time.
+## Dashboard
 
----
+The report contains four pages:
 
-# 📊 Dashboard Overview
+### 1. Global Economic Overview
+Tracks GDP per capita, inflation, and unemployment over time. Small economies can rank highly on GDP per capita, so country rankings should be interpreted with population and economic context in mind.
 
-The dashboard contains **four analytical pages** designed to explore global development from multiple perspectives.
+![Global Economic Overview](screenshots/01_Global_Economic_Overview.png)
 
----
+### 2. Global Population Insights
+Explores total population, population growth, and country-level population distribution.
 
-## 1️⃣ Global Economic Overview
+![Population Analysis](screenshots/02%20Population%20Analysis.png)
 
-This page analyzes key global economic indicators.
+### 3. Energy & Carbon Insights
+Compares CO₂ emissions per capita with renewable-energy indicators across countries. These are descriptive comparisons and do not establish that one indicator causes another.
 
-**Key metrics**
-- Average GDP per capita
-- Global inflation
-- Global unemployment rate
+![Energy and Emissions](screenshots/03_Energy%20emission.png)
 
-**Insights**
-- GDP per capita shows a **consistent upward trend since the 1960s**.
-- Inflation experienced spikes in earlier decades but **stabilizes in recent years**.
-- Smaller financial hubs such as **Monaco and Liechtenstein rank among the highest GDP per capita globally**.
+### 4. Country Development Profile
+Allows a country to be selected for a closer look at GDP per capita, CO₂ emissions, renewable energy, and other economic indicators over time. The screenshot shows India as an example.
 
-![Economic Overview](screenshots/01_Global_Economic_Overview.png)
+![Country Development Profile](screenshots/04_Country%20Insights.png)
 
----
+## Files
+- **Power BI report:** [PowerBI-Main Dashboard.pbix](PowerBI-Main%20Dashboard.pbix)
+- **Dataset used by the report:** [data.csv](data.csv)
+- **Dataset source:** [World Bank Open Data](https://data.worldbank.org/) and the [World Development Indicators database](https://databank.worldbank.org/source/world-development-indicators)
 
-## 2️⃣ Global Population Insights
+## Tools
+- Microsoft Power BI
+- DAX
+- Power Query
+- Data visualization
 
-This page focuses on global demographic trends.
+## Project objective
+Build a multi-page dashboard to explore country-level development indicators, compare patterns across regions and time, and support interactive exploration.
 
-**Key metrics**
-- Total global population
-- Population growth rate
-- Population distribution by country
+## Interpretation notes
+- Indicator availability and reporting years may differ by country; comparisons should account for missing observations and different coverage.
+- Aggregating country values into a “global” figure requires a deliberate choice of aggregation method. Review the report's DAX measures before interpreting global KPI cards as population-weighted or economy-weighted values.
+- Relationships in the visuals are descriptive, not causal.
 
-**Insights**
-- Global population has grown from **~3 billion in 1960 to over 8 billion today**.
-- **India and China dominate global population share**.
-- Population growth rate is **gradually slowing**, indicating demographic transition.
-
-![Population Analysis](screenshots/02_Population_Analysis.png)
-
----
-
-## 3️⃣ Energy & Carbon Insights
-
-This page explores sustainability indicators.
-
-**Key metrics**
-- Global CO₂ emissions per capita
-- Renewable energy share
-- Highest emitting countries
-
-**Insights**
-- Countries with **lower renewable energy adoption tend to have higher CO₂ emissions per capita**.
-- Developed countries such as the **United States, Canada, and Australia show higher emissions per person**.
-- Global renewable adoption trends indicate a **slow but steady shift toward cleaner energy sources**.
-
-![Energy Insights](screenshots/03_Energy_emission.png)
-
----
-
-## 4️⃣ Country Development Profile
-
-Interactive page for analyzing **individual country trends**.
-
-Users can select a country and explore:
-
-- GDP per capita trends
-- CO₂ emissions trends
-- Renewable energy usage
-- Economic indicators by year
-
-Example shown below for **India**.
-
-![Country Insights](screenshots/04_Country_Insights.png)
-
----
-
-# 🛠 Tools & Technologies
-
-- **Power BI**
-- **DAX**
-- **Power Query**
-- **Data Visualization**
-- **World Bank Open Data**
-
----
-
-# 📂 Dataset
-
-World Bank World Development Indicators  
-https://data.worldbank.org/
-
----
-
-# 🚀 Project Goal
-
-The objective of this project was to build a **multi-page analytical dashboard** that:
-
-- Visualizes global development trends
-- Compares countries across economic and environmental indicators
-- Demonstrates interactive dashboard design using Power BI
-
----
-
-# 👤 Author
-
+## Author
 Sandeep Patnaik
